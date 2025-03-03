@@ -60,7 +60,8 @@ names:
   58: lfm_data
   59: lfm_radar
   60: chirpss
-nc: 61
+  61: cw_spike
+nc: 62
 path: ./wideband/wideband_yolo
 train: impaired/images/train
 val: impaired/images/val

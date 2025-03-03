@@ -60,7 +60,8 @@ names:
   58: lfm_data
   59: lfm_radar
   60: chirpss
-nc: 61
+  61: cw_spike
+nc: 62
 overrides:
   batch: 32
   data: 08_yolo_optuna.yaml

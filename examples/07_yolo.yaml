@@ -70,7 +70,8 @@ names:
   58: lfm_data
   59: lfm_radar
   60: chirpss
-nc: 61
+  61: cw_spike
+nc: 62
 num_samples: 530
 overrides:
   batch: 32
