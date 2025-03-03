@@ -2,17 +2,7 @@
 
 
 destination_path=detect.pt
-
-file_id=12e9PPgKc_-s1bFmdc9ybETdoo2OL90v7
-file_url="https://drive.usercontent.google.com/download?id=$file_id&export=download"
-
-confirmation_page=$(curl -s -L "$file_url")
-
-file_id=$(echo "$confirmation_page" | grep -oE "name=\"id\" value=\"[^\"]+" | sed 's/name="id" value="//')
-file_confirm=$(echo "$confirmation_page" | grep -oE "name=\"confirm\" value=\"[^\"]+" | sed 's/name="confirm" value="//')
-file_uuid=$(echo "$confirmation_page" | grep -oE "name=\"uuid\" value=\"[^\"]+" | sed 's/name="uuid" value="//')
-
-download_url="https://drive.usercontent.google.com/download?id=$file_id&export=download&confirm=$file_confirm&uuid=$file_uuid"
+download_url=https://bucket.ltsnet.net/torchsig/models/detect.pt
 
 curl -L -o "$destination_path" "$download_url"
 
